@@ -1,13 +1,14 @@
-# TRABALHO 01:  Título do Trabalho
+# TRABALHO 01:  Surfistinha
 Trabalho desenvolvido durante a disciplina de BD1
 
 # Sumário
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
-primeiro_componente_do_grupo:email_primeiro_componente@dominio.com<br>
-segundo_componente_do_grupo:email_segundo_componente@dominio.com<br>
-...<br>
+Fernanda Jaimara do Nascimento:fernandajaimara@gmail.com<br>
+Lorenzo Peixoto:lo.peixoto@gmail.com<br>
+Maressa Karen Henrique da Silva:khsmaressa@gmail.com<br>
+Rafael Machado Souza:rafaelmachadosouza3@gmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
 Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
