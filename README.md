@@ -13,10 +13,9 @@ Rafael Machado Souza:rafaelmachadosouza3@gmail.com<br>
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
 Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
 <br>e motivação da escolha realizada. <br>
-
-> A empresa "Devcom Projetos" visa colaborar com desenvolvimento de projetos para uma sociedade melhor. Sabendo-se dos desafios para gerenciar projetos dentro de uma empresa e visando unir as informações relativas a funcionários, departamentos e projetos em um mesmo local, ficamos motivados com o desenvolvimento deste sistema. O Sistema "Devcom" tem como objetivo gerenciar todas as informações ao desenvolvimento das atividades de projetos em diversas localidades do país. Para realizar suas operações adequadamente e empresa necessita que sistema que armazene informações relativas aos Projetos, Departamentos e Empregados, além de também armazenar dados sobre  Dependentes e Históricos de Salário dos empregados. O sistema deverá gerar um conjunto de relatórios que por sua vez atenderá os anseios da empresa em questão.
  
-
+> empresa "Surfistinha" objetiva providenciar aos surfistas um sistema eficiente e portável de aluguel de pranchas a fim de propiciar uma ótima experiência para os clientes. Várias pessoas querem surfar sem precisar comprar uma prancha e para isso contam com um serviço de aluguel. Para facilitar isso o sistema "surfistinha" proporciona uma interface online entre o cliente e a loja da empresa. Para realizar suas atividades, a empresa necessita de um sistema que armazene informações referentes aos clientes, cartão de crédito, pranchas e seus modelos e a locação das pranchas. O sistema deverá gerar relatórios que forneçam feedback para a gerência da empresa.
+ 
 ### 3.MINI-MUNDO<br>
 
 Descrever o mini-mundo! (Não deve ser maior do que 30 linhas, se necessário resumir para justar) <br>
