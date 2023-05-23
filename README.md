@@ -11,18 +11,13 @@ Maressa Karen Henrique da Silva:khsmaressa@gmail.com<br>
 Rafael Machado Souza:rafaelmachadosouza3@gmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
-Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
-<br>e motivação da escolha realizada. <br>
+Este documento contém a especificação do projeto do banco de dados Surfistinha. 
  
 > A empresa "Surfistinha" objetiva providenciar aos surfistas um sistema eficiente e portável de aluguel de pranchas a fim de propiciar uma ótima experiência para os clientes. Várias pessoas querem surfar sem precisar comprar uma prancha e para isso contam com um serviço de aluguel. Para facilitar isso o sistema "surfistinha" proporciona uma interface online entre o cliente e a loja da empresa. Para realizar suas atividades, a empresa necessita de um sistema que armazene informações referentes aos clientes, cartão de crédito, pranchas e seus modelos e a locação das pranchas. O sistema deverá gerar relatórios que forneçam feedback para a gerência da empresa.
  
 ### 3.MINI-MUNDO<br>
 
-Descrever o mini-mundo! (Não deve ser maior do que 30 linhas, se necessário resumir para justar) <br>
-Entrevista com o usuário e identificação dos requisitos.(quando for o caso de sistemas com cliente  real)<br>
-Descrição textual das regras de negócio definidas como um  subconjunto do mundo real 
-cujos elementos são propriedades que desejamos incluir, processar, armazenar, 
-gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
+Descrição do mini-mundo!
 
 > Um cliente deseja um sistema onde possa alugar suas pranchas de forma online, nesse sistema uma prancha só pode ser alugada para um único cliente. Cada prancha não deve estar associada diretamente ao cliente e sim a locação. Uma locação pode comportar uma ou várias pranchas. Cada cliente pode ter um  ou vários cartões de crédito cadastrados, mas cada cartão só pode estar associado a um cliente. Por fim, cada cliente deve estar associado somente a uma única identificação de login, e o login deve ser exclusivo deste cliente. Cada LOCAÇÃO deve estar relacionada apenas a um único cartão de um determinado cliente (pois o sistema só permite compras por meio de cartão). Do CLIENTE devemos registrar as informações de código, nome, telefone e e-mail, já com relação a cada PRANCHA devemos registrar o código, status, nome e preço, cada prancha também deve ter um modelo e esse modelo precisa ter descrição e comprimento.  Com relação a cada CARTÃO devemos saber o número , bandeira e data de validade e o momento que o cartão foi inserido no sistema.  Sobre cada  LOCAÇÃO deve-se registrar um código, data/hora e tempo de locação da prancha. Com relação aos dados de LOGIN deve-se armazenar o username e password de cada usuário (mas estes não devem ser chaves de login). 
 
