@@ -14,7 +14,7 @@ Rafael Machado Souza:rafaelmachadosouza3@gmail.com<br>
 Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
 <br>e motivação da escolha realizada. <br>
  
-> empresa "Surfistinha" objetiva providenciar aos surfistas um sistema eficiente e portável de aluguel de pranchas a fim de propiciar uma ótima experiência para os clientes. Várias pessoas querem surfar sem precisar comprar uma prancha e para isso contam com um serviço de aluguel. Para facilitar isso o sistema "surfistinha" proporciona uma interface online entre o cliente e a loja da empresa. Para realizar suas atividades, a empresa necessita de um sistema que armazene informações referentes aos clientes, cartão de crédito, pranchas e seus modelos e a locação das pranchas. O sistema deverá gerar relatórios que forneçam feedback para a gerência da empresa.
+> A empresa "Surfistinha" objetiva providenciar aos surfistas um sistema eficiente e portável de aluguel de pranchas a fim de propiciar uma ótima experiência para os clientes. Várias pessoas querem surfar sem precisar comprar uma prancha e para isso contam com um serviço de aluguel. Para facilitar isso o sistema "surfistinha" proporciona uma interface online entre o cliente e a loja da empresa. Para realizar suas atividades, a empresa necessita de um sistema que armazene informações referentes aos clientes, cartão de crédito, pranchas e seus modelos e a locação das pranchas. O sistema deverá gerar relatórios que forneçam feedback para a gerência da empresa.
  
 ### 3.MINI-MUNDO<br>
 
