@@ -60,7 +60,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
         e tuplas falsas (Aplicar os conceitos de normalização abordados).   
         
-![Alt text](https://github.com/discipbd1/trab01/blob/master/images/concept_sample.png?raw=true "Modelo Conceitual")
+![Alt text](https://github.com/discipbd1/trab01/blob/master/images/Y?raw=true "Modelo Conceitual")
     
     
         
@@ -70,11 +70,53 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     [Grupo02]: [Nomes dos que participaram na avaliação]
 
 #### 5.2 Descrição dos dados 
-    [objeto]: [descrição do objeto]
-    
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+    2) DETALHAMENTO DE ESPECIFICAÇÃO DAS ENTIDADES E RELACIONAMENTOS
+
+Entidades:
+
+
+
+CLIENTE: Tabela que armazena os dados dos clientes.
+Código: Campo que armazena o ID do cliente.
+Nome:Campo que armazena o nome do cliente.
+Telefone: Campo que armazena o telefone do Cliente.
+Email: Campo que armazena o email do cliente que vai alocar a prancha.
+PRANCHA: código, status, e preço;
+MODELO_PRANCHA: código, descrição, comprimento, nome, foto.
+CARTAO: código, numero, bandeira e data de  validade;
+LOCAÇÃO:  código, data/hora;
+LOGIN: id, username e password.
+CLIENTE: 
+PRANCHA: Tabela que armazena os dados das pranchas.
+MODELO_PRANCHA: Tabela que armazena dados sobre as pranchas que serão locadas
+CARTAO: Tabela que armazena informações relativas ao cartão que será usado para efetuar a locação.
+LOCAÇÃO:  código, data/hora;
+LOGIN: id, username e password.
+
+Relacionamentos:
+
+Efetua(Cliente/Login)
+Ao se cadastrar no site o cliente efetuará um login.
+Um login só pode estar relacionado a um cliente.
+
+
+Possui(Cliente/Cartão)
+Um cliente pode ter um ou vários cartões cadastrados
+Um cartão é associado a um cliente
+
+Possibilita(Cartão/Locação): 
+Um cartão possibilita a locação das pranchas. 
+Para conseguir finalizar uma locação o cliente precisa ter um cartão.
+
+
+Loca(Locação/Prancha)
+Cada locação pode ter uma ou várias pranchas.
+Cada prancha pode estar relacionada a uma locação.
+
+
+Possui(Prancha/Modelo Prancha)
+Uma prancha é associada a um modelo de prancha.
+Um modelo de prancha pode estar associado a várias pranchas.
 
 
 ### 6	MODELO LÓGICO<br>
