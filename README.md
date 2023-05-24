@@ -94,6 +94,17 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
         (em caso de falha na restauração o grupo não pontuará neste quesito)
         c) formato .SQL
 
+### INSERÇÃO NA TABELA LOGIN_CLIENTE
+INSERT INTO login_cliente(id, nome, telefone, email, username, password)
+VALUES
+(1, 'Raphael Ambrosius Costeau', '27997878387', 'rafinha@gmail.com', 'DumbDoomSpiral', 'DeusEstaMorto123'),
+(2, 'Fernanda Jamaira', '27993210213', 'chata@gmail.com', 'fernandaJaimara', 'faz_o_L_13'),
+(3, 'Mirosmar Francisco', '27993284533', 'miros@gmail.com', 'mirosmaFran', 'flamengo20'),
+(4, 'Luiz Inácio Da Silva', '27998483838', 'lulu@gmail.com', 'luluDaSilva', 'macacoLouco1'),
+(5, 'Pedro Pascal', '27994843881', 'joel@gmail.com', 'JoelPascal', 'corintia1000'),
+(6, 'Alexandre Fronta', '27998882828', 'lele@gmail.com', 'xandão10', 'xandao100'),
+(7, 'Rodrigo Santoro', '27999393999', 'xexes@gmail.com', 'rodriguin6Pack', 'luckyStrike12');
+
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
