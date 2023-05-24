@@ -136,7 +136,7 @@ Um modelo de prancha pode estar associado a várias pranchas.
         (em caso de falha na restauração o grupo não pontuará neste quesito)
         c) formato .SQL
 
-### INSERÇÃO NA TABELA LOGIN_CLIENTE
+> INSERÇÃO NA TABELA LOGIN_CLIENTE
 INSERT INTO login_cliente(id, nome, telefone, email, username, password)
 VALUES
 (1, 'Raphael Ambrosius Costeau', '27997878387', 'rafinha@gmail.com', 'DumbDoomSpiral', 'DeusEstaMorto123'),
