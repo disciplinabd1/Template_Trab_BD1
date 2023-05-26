@@ -76,7 +76,7 @@ Entidades:
 
 
 
-CLIENTE: Tabela que armazena os dados dos clientes.
+CLIENTE: Tabela que armazena os dados dos clientes.<br />
 Código: Campo que armazena o ID do cliente.
 Nome:Campo que armazena o nome do cliente.
 Telefone: Campo que armazena o telefone do Cliente.
