@@ -73,22 +73,22 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     2) DETALHAMENTO DE ESPECIFICAÇÃO DAS ENTIDADES E RELACIONAMENTOS
 
 Entidades:<br />
-CLIENTE: Tabela que armazena os dados dos clientes.
-Código: Campo que armazena o ID do cliente.
-Nome:Campo que armazena o nome do cliente.
-Telefone: Campo que armazena o telefone do Cliente.
-Email: Campo que armazena o email do cliente que vai alocar a prancha.
-PRANCHA: código, status, e preço;
-MODELO_PRANCHA: código, descrição, comprimento, nome, foto.
-CARTAO: código, numero, bandeira e data de  validade;
-LOCAÇÃO:  código, data/hora;
-LOGIN: id, username e password.
-CLIENTE: código, nome, telefone, email.
-PRANCHA: Tabela que armazena os dados das pranchas.
-MODELO_PRANCHA: Tabela que armazena dados sobre as pranchas que serão locadas
-CARTAO: Tabela que armazena informações relativas ao cartão que será usado para efetuar a locação.
-LOCAÇÃO:  código, data/hora;
-LOGIN: id, username e password.
+CLIENTE: Tabela que armazena os dados dos clientes.  
+Código: Campo que armazena o ID do cliente.  
+Nome:Campo que armazena o nome do cliente.  
+Telefone: Campo que armazena o telefone do Cliente.  
+Email: Campo que armazena o email do cliente que vai alocar a prancha.  
+PRANCHA: código, status, e preço;  
+MODELO_PRANCHA: código, descrição, comprimento, nome, foto.  
+CARTAO: código, numero, bandeira e data de  validade;  
+LOCAÇÃO:  código, data/hora;  
+LOGIN: id, username e password.  
+CLIENTE: código, nome, telefone, email.  
+PRANCHA: Tabela que armazena os dados das pranchas.  
+MODELO_PRANCHA: Tabela que armazena dados sobre as pranchas que serão locadas.  
+CARTAO: Tabela que armazena informações relativas ao cartão que será usado para efetuar a locação.  
+LOCAÇÃO:  código, data/hora;  
+LOGIN: id, username e password.  
 
 Relacionamentos:
 
