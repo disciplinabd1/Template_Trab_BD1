@@ -28,7 +28,6 @@ Neste ponto a codificação não e necessária, somente as ideias de telas devem
 Sugestão: https://balsamiq.com/products/mockups/<br>
 
 ![Alt text](https://github.com/discipbd1/trab01/blob/master/balsamiq.png?raw=true "Title")
-![Alt text](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/INNER_JOIN.png)
 ![Arquivo PDF do Protótipo Balsamiq feito para Empresa Surfistinha](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/arquivos/SistemaSurfista_Fernanda_Lorenzo_Maressa_Rafael%20(1).pdf)
 ![Arquivo PDF do Protótipo Balsamiq feito para Empresa Surfistinha (adimistração)](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/arquivos/AdmSite.pdf)
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
