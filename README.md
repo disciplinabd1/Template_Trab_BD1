@@ -197,10 +197,10 @@ INSERT INTO MODELO_PRANCHA (nome,descricao,comprimento,foto) VALUES
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 SELECT * FROM login_cliente  
 SELECT * FROM cartao  
-SELECT * FROM locacao
-SELECT * FROM prancha
-SELECT * FROM locacao_prancha
-SELECT * FROM modelo_prancha
+SELECT * FROM locacao  
+SELECT * FROM prancha  
+SELECT * FROM locacao_prancha  
+SELECT * FROM modelo_prancha  
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
