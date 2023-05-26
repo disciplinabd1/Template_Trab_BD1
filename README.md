@@ -133,66 +133,65 @@ Um modelo de prancha pode estar associado a várias pranchas.
         c) formato .SQL
 
 ###### INSERÇÃO NA TABELA LOGIN_CLIENTE
-INSERT INTO login_cliente(id, nome, telefone, email, username, password)
-VALUES
-(1, 'Raphael Ambrosius Costeau', '27997878387', 'rafinha@gmail.com', 'DumbDoomSpiral', 'DeusEstaMorto123'),
-(2, 'Fernanda Jamaira', '27993210213', 'chata@gmail.com', 'fernandaJaimara', 'faz_o_L_13'),
-(3, 'Mirosmar Francisco', '27993284533', 'miros@gmail.com', 'mirosmaFran', 'flamengo20'),
-(4, 'Luiz Inácio Da Silva', '27998483838', 'lulu@gmail.com', 'luluDaSilva', 'macacoLouco1'),
-(5, 'Pedro Pascal', '27994843881', 'joel@gmail.com', 'JoelPascal', 'corintia1000'),
-(6, 'Alexandre Fronta', '27998882828', 'lele@gmail.com', 'xandão10', 'xandao100'),
-(7, 'Rodrigo Santoro', '27999393999', 'xexes@gmail.com', 'rodriguin6Pack', 'luckyStrike12');
+INSERT INTO login_cliente(id, nome, telefone, email, username, password)<br />
+VALUES<br />
+(1, 'Raphael Ambrosius Costeau', '27997878387', 'rafinha@gmail.com', 'DumbDoomSpiral', 'DeusEstaMorto123'),<br />
+(2, 'Fernanda Jamaira', '27993210213', 'chata@gmail.com', 'fernandaJaimara', 'faz_o_L_13'),<br />
+(3, 'Mirosmar Francisco', '27993284533', 'miros@gmail.com', 'mirosmaFran', 'flamengo20'),<br />
+(4, 'Luiz Inácio Da Silva', '27998483838', 'lulu@gmail.com', 'luluDaSilva', 'macacoLouco1'),<br />
+(5, 'Pedro Pascal', '27994843881', 'joel@gmail.com', 'JoelPascal', 'corintia1000'),<br />
+(6, 'Alexandre Fronta', '27998882828', 'lele@gmail.com', 'xandão10', 'xandao100'),<br />
+(7, 'Rodrigo Santoro', '27999393999', 'xexes@gmail.com', 'rodriguin6Pack', 'luckyStrike12');<br />
 
-###### INSERÇÃO NA TABELA CARTAO
-INSERT INTO PRANCHA(ID, PRECO, FK_MODELO_PRANCHA_ID)
-	VALUES	(1, 50, 1),
-		(2, 30, 2),
-		(3, 50, 3),
-		(4, 25, 4),
-		(5, 40, 5),
-		(6, 40, 6),
-		(7, 30, 7);
+###### INSERÇÃO NA TABELA PRANCHA
+INSERT INTO prancha(ID, PRECO, FK_MODELO_PRANCHA_ID)<br />
+VALUES(1, 50, 1),<br />
+(2, 30, 2),<br />
+(3, 50, 3),<br />
+(4, 25, 4),<br />
+(5, 40, 5),<br />
+(6, 40, 6),<br />
+(7, 30, 7);<br />
   
 ###### INSERÇÃO NA TABELA CARTAO
-insert into CARTAO(id, numero, bandeira,dt_validade, fk_login_cliente_id)
-	values 	(1, 1234567891122344, 'VISA', '2024/06/12', 1),
-		(2,1224347894321239, 'VISA', '2024/08/10', 2),
-		(3, 9849439975744394, 'Mastercard', '2025/03/02', 3),
-		(4, 2399349938849398, 'ELO', '2023/11/04', 4),
-		(5, 2999388839933993, 'ALELO', '2024-05-05', 5),
-		(6, 2999888888443992, 'Hipercard', '2025-06-07', 6)
-		(7, 3994843338581039, 'Mastercard', '2024-08-09', 7);
+INSERT INTO cartao(id, numero, bandeira,dt_validade, fk_login_cliente_id)<br />
+VALUES(1, 1234567891122344, 'VISA', '2024/06/12', 1),<br />
+(2,1224347894321239, 'VISA', '2024/08/10', 2),<br />
+(3, 9849439975744394, 'Mastercard', '2025/03/02', 3),<br />
+(4, 2399349938849398, 'ELO', '2023/11/04', 4),<br />
+(5, 2999388839933993, 'ALELO', '2024-05-05', 5),<br />
+(6, 2999888888443992, 'Hipercard', '2025-06-07', 6)<br />
+(7, 3994843338581039, 'Mastercard', '2024-08-09', 7);<br />
   
 ###### INSERÇÃO NA TABELA LOCACAO_PRANCHA
-INSERT INTO LOCACAO_PRANCHA(ID, TEMPO_LOCACAO, STATUS, FK_LOCACAO_ID, FK_PRANCHA_ID)
-	VALUES	(1, 4, 'Alugada', 1, 3),
-		(2, 6, 'Alugada', 2, 2),
-		(3, 4, 'Disponivel', 3, 1),
-		(4, 6, 'Alugada', 4, 5),
-		(5, 4, 'Alugada', 6, 4),
-		(6, 8, 'Disponivel', 6, 6),
-		(7, 8, 'Alugada', 7, 7);
+INSERT INTO LOCACAO_PRANCHA(ID, TEMPO_LOCACAO, STATUS, FK_LOCACAO_ID, FK_PRANCHA_ID)  
+VALUES	(1, 4, 'Alugada', 1, 3),  
+(2, 6, 'Alugada', 2, 2),  
+(3, 4, 'Disponivel', 3, 1),  
+(4, 6, 'Alugada', 4, 5),  
+(5, 4, 'Alugada', 6, 4),  
+(6, 8, 'Disponivel', 6, 6),  
+(7, 8, 'Alugada', 7, 7);  
   
 ###### INSERÇÃO NA TABELA LOCACAO
 INSERT INTO LOCACAO (data_hora,FK_CARTAO_ID) VALUES
-('12/06/2023 14:32:43', 2),
-('2023-06-11 16:34:42',	2),
-('2023-07-12 09:01:12',	3),
-('2023-08-09 00:02:45',	5),
-('2023-08-09 13:11:34', 4),
-('2023-09-09 12:33:34',	6),
-('2023-08-04 14:33:43',	7);
+('12/06/2023 14:32:43', 2),  
+('2023-06-11 16:34:42',	2),  
+('2023-07-12 09:01:12',	3),  
+('2023-08-09 00:02:45',	5),  
+('2023-08-09 13:11:34', 4),  
+('2023-09-09 12:33:34',	6),  
+('2023-08-04 14:33:43',	7);  
 
 ###### INSERÇÃO NA TABELA MODELO_PRANCHA
-INSERT INTO MODELO_PRANCHA (nome,descricao,comprimento,foto) VALUES
-('Longboard','É um tipo de prancha de surf caracterizada por sua grande extensão, variando entre 9 e 12 pés de comprimento, e uma largura que geralmente é maior que a de outras pranchas de surf.', 2.9, 'https://s-media-cache-ak0.pinimg.com/originals/fd/82/8d/fd828daf3d8630fe70bc7a9d31701aa7.jpg'),
-('Shortboard','São pranchas menores, indicadas para pessoas que já tem um pouco de experiência no surf.',1.68,'https://th.bing.com/th/id/OIP.X1-ovzrhyQC9BPdwgb5jYQHaHa?pid=ImgDet&rs=1'),
-('Funboard','São as pranchas mais recomendadas para iniciantes no Surf. Possuem bastante área distribuída por toda sua extensão.',2.29,'https://cdn.shopify.com/s/files/1/0206/5056/products/Green_Thumb_2048x.jpg?v=1506107831'),
-('Fish','Essas pranchas são caracterizadas por sua forma única, que apresenta uma largura e volume maior na área do meio da prancha, além de uma rabeta em forma de swallow (andorinha), que é mais larga e curta do que as rabetas tradicionais.',1.63,'https://th.bing.com/th/id/R.2bf47c66a7d1dfa4327a843181f97c75?rik=vBnjsCocFmCtlw&pid=ImgRaw&r=0'),
-('Evolution','É a melhor para aprender a surfar porque é a maior e grossa, além de muito estáveis.',1.83,'https://images.offerup.com/7u6Bx7vTuvHvQ-yVlLnn36R9NM4=/600x800/8eba/8eba4d5873f747d4bc273ebde96d1c58.jpg'),
-('Gun', 'Pranchas maiores e com o bico arredondado que variam de 8 a 12 pés. Por ser bem comprida e pesada, é uma prancha estável e que entra na onda com mais facilidade.',3.05,'https://th.bing.com/th/id/OIP.Dw3Sw1SG-OUWSYWeCogaEgHaHa?pid=ImgDet&rs=1'),
-('Softboard','Uma prancha softboard é uma prancha de surf feita com um núcleo de espuma macia e uma camada superior de material emborrachado, que fornece uma superfície antiderrapante e segura para o surfista ficar em pé. Essas pranchas são especialmente projetadas para iniciantes e surfistas intermediários, que estão aprendendo a surfar ou querem melhorar suas habilidades.',2.74,'https://th.bing.com/th/id/R.a578f11895e66c5045dc2ddf8e862a64?rik=ge07XvUSFls%2f3A&pid=ImgRaw&r=0');
-
+INSERT INTO MODELO_PRANCHA (nome,descricao,comprimento,foto) VALUES  
+('Longboard','É um tipo de prancha de surf caracterizada por sua grande extensão, variando entre 9 e 12 pés de comprimento, e uma largura que geralmente é maior que a de outras pranchas de surf.', 2.9, 'https://s-media-cache-ak0.pinimg.com/originals/fd/82/8d/fd828daf3d8630fe70bc7a9d31701aa7.jpg'),  
+('Shortboard','São pranchas menores, indicadas para pessoas que já tem um pouco de experiência no surf.',1.68,'https://th.bing.com/th/id/OIP.X1-ovzrhyQC9BPdwgb5jYQHaHa?pid=ImgDet&rs=1'),  
+('Funboard','São as pranchas mais recomendadas para iniciantes no Surf. Possuem bastante área distribuída por toda sua extensão.',2.29,'https://cdn.shopify.com/s/files/1/0206/5056/products/Green_Thumb_2048x.jpg?v=1506107831'),  
+('Fish','Essas pranchas são caracterizadas por sua forma única, que apresenta uma largura e volume maior na área do meio da prancha, além de uma rabeta em forma de swallow (andorinha), que é mais larga e curta do que as rabetas tradicionais.',1.63,'https://th.bing.com/th/id/R.2bf47c66a7d1dfa4327a843181f97c75?rik=vBnjsCocFmCtlw&pid=ImgRaw&r=0'),  
+('Evolution','É a melhor para aprender a surfar porque é a maior e grossa, além de muito estáveis.',1.83,'https://images.offerup.com/7u6Bx7vTuvHvQ-yVlLnn36R9NM4=/600x800/8eba/8eba4d5873f747d4bc273ebde96d1c58.jpg'),  
+('Gun', 'Pranchas maiores e com o bico arredondado que variam de 8 a 12 pés. Por ser bem comprida e pesada, é uma prancha estável e que entra na onda com mais facilidade.',3.05,'https://th.bing.com/th/id/OIP.Dw3Sw1SG-OUWSYWeCogaEgHaHa?pid=ImgDet&rs=1'),  
+('Softboard','Uma prancha softboard é uma prancha de surf feita com um núcleo de espuma macia e uma camada superior de material emborrachado, que fornece uma superfície antiderrapante e segura para o surfista ficar em pé. Essas pranchas são especialmente projetadas para iniciantes e surfistas intermediários, que estão aprendendo a surfar ou querem melhorar suas habilidades.',2.74,'https://th.bing.com/th/id/R.a578f11895e66c5045dc2ddf8e862a64?rik=ge07XvUSFls%2f3A&pid=ImgRaw&r=0');  
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
