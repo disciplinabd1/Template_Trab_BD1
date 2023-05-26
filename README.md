@@ -36,7 +36,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     
 > A Empresa Surfistinha precisa inicialmente dos seguintes relatórios:
 
-* Relatório de alugueis mensais. O relatório deve mostrar o mês e ano, e total de faturamento.
+* Relatório mostrando todas as pranchas do sistema. O relatório deve mostrar o código da prancha, o modelo e se a prancha está disponível ou alugada.
 * Relatório relacionando cliente, modelo de prancha, mostrando qual o modelo mais alugado por cada cliente. O relatório deve conter o nome do cliente, o nome do modelo de prancha mais alugado por ele e o total de vezes que ele alugou o modelo.
 * Relatório ordenando os modelos de prancha por ordem de lucro. O relatório deve mostrar o modelo da prancha e o total arrecado com as locações da prancha.
 * Relatório mostrando os dados referentes a cada prancha, descrição, comprimento, nome e quantidade de pranchas do referente modelo, além do número de locações de cada modelo.
