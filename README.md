@@ -141,6 +141,25 @@ Um modelo de prancha pode estar associado a várias pranchas.
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
         (criação de tabelas, alterações, etc..) 
+        CREATE TABLE LOGIN_CLIENTE(
+        ID SERIAL PRIMARY KEY,
+        NOME VARCHAR(80),
+        TELEFONE VARCHAR(15),
+        EMAIL VARCHAR(50),
+        USERNAME VARCHAR(15),
+        PASSWORD VARCHAR(30)
+        );<br>
+        
+        CREATE TABLE CARTAO(
+        ID SERIAL PRIMARY KEY,
+        NUMERO BIGINT,
+        BANDEIRA VARCHAR(15),
+        DT_VALIDADE DATE,
+        FK_LOGIN_CLIENTE_ID INTEGER,
+        FOREIGN KEY(FK_LOGIN_CLIENTE_ID)REFERENCES LOGIN_CLIENTE(ID)
+        );
+
+
         
        
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
