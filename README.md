@@ -105,7 +105,11 @@ PRANCHA: Tabela que armazena os dados das pranchas.
 MODELO_PRANCHA: Tabela que armazena dados sobre as pranchas que serão locadas.  
 CARTAO: Tabela que armazena informações relativas ao cartão que será usado para efetuar a locação.  
 LOCAÇÃO:  código, data/hora;  
-LOGIN: id, username e password.  
+LOGIN: Tabela que armazena informações relacionadas ao login que o cliente usará para logar no Sistema.
+Id: Campo que armazena a identificação única do login utilizado pelo cliente.
+username: Campo que contém o nome de usuário utilizado pelo cliente para logar no Sistema.
+password: Campo que armazena a senha que o cliente usará para logar no sistema.
+
 
 Relacionamentos:
 
