@@ -78,20 +78,20 @@ LOGIN: Tabela que armazena informações relacionadas ao login que o cliente usa
 Id: Campo que armazena a identificação única do login utilizado pelo cliente.<br>
 username: Campo que contém o nome de usuário utilizado pelo cliente para logar no Sistema.<br>
 password: Campo que armazena a senha que o cliente usará para logar no sistema.<br>
-
+<br>
 CLIENTE: Tabela que armazena os dados dos clientes.  
 id: Campo que armazena  a identificação unica do cliente.  
 Nome: Campo que armazena o nome do cliente.  
 Telefone: Campo que armazena o telefone do Cliente.  
 Email: Campo que armazena o email do cliente que vai alocar a prancha.
-
+<br>
 CARTAO: Tabela que armazenas as informações referentes ao cartão que o cliente irá usar para efetuar a locação da prancha.<br>
 Código: Campo que armazena a identificação única do cartão utilizado para locar as pranchas.<br>
 Numero: Campo que armazena o número do cartão.<br>
 Bandeira: Campo que armazena a informação da bandeira do cartão.<br>
 Data de  validade: Campo que armazena a data da validade da utilização do cartão.<br>
-
-LOCAÇÃO:
+<br>
+LOCAÇÃO: Tabela que armazena 
 id: Campo que armazena a identificação única da locação.<br>
 data_hora: Campo que armazena a informação que contém a data/hora que a locação foi efetivada.<br>
 
@@ -100,7 +100,7 @@ PRANCHA: Tabela que armazena informações sobre as pranchas que estarão dispon
 Código: Campo que armazena a identificação unica da prancha.<br>
 Status: Campo que armazena a informação se a prancha está disponível para locação ou não.<br>
 Preço: Campo que armazena o valor que será cobrado por hora que a prancha será locada.<br>
-
+ <br>
 MODELO_PRANCHA: Tabela que armazena informações sobre quais são os tipos de pranchas que serão disponibilizadas pela loja para locação.<br>
 Código: Campo que armazena a identificação única do modelo de prancha.<br>
 Descrição: Campo que contem um texto que descreve o Modelo da prancha e suas especificidades.<br>
@@ -108,15 +108,7 @@ Comprimento: Campo que contém a informação do tamanho da prancha.<br>
 Nome: Campo que armazena o nome da prancha.<br>
 Foto: Campo que contem a URL com uma imagem do modelo da prancha.<br>
 
-
- 
-
-
-
-
-
-
-Relacionamentos:
+**Relacionamentos:
 
 Efetua(Cliente/Login)
 Ao se cadastrar no site o cliente efetuará um login.
