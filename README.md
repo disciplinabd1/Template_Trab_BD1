@@ -78,6 +78,7 @@ Código: Campo que armazena o ID do cliente.
 Nome:Campo que armazena o nome do cliente.  
 Telefone: Campo que armazena o telefone do Cliente.  
 Email: Campo que armazena o email do cliente que vai alocar a prancha.
+
 <br />
 PRANCHA: Tabela que armazena informações sobre as pranchas que estarão disponíveis para os clientes alugarem.
 Código: Campo que armazena a identificação unica da prancha.
@@ -85,13 +86,19 @@ Status: Campo que armazena a informação se a prancha está disponível para lo
 Preço: Campo que armazena o valor que será cobrado por hora que a prancha será locada.
 
 MODELO_PRANCHA: Tabela que armazena informações sobre quais são os tipos de pranchas que serão disponibilizadas pela loja para locação.
-código: Campo que armazena a identificação única do modelo de prancha. descrição: Campo que contem um texto que descreve o modelo da prancha e suas especificidades.
-comprimento: Campo que contém a informação do tamanho da prancha.
-nome: Campo que armazena o nome da prancha.
-foto: Campo que contem a URL com uma imagem do modelo da prancha.
+Código: Campo que armazena a identificação única do modelo de prancha.
+Descrição: Campo que contem um texto que descreve o Modelo da prancha e suas especificidades.
+Comprimento: Campo que contém a informação do tamanho da prancha.
+Nome: Campo que armazena o nome da prancha.
+Foto: Campo que contem a URL com uma imagem do modelo da prancha.
 
-CARTAO: código, numero, bandeira e data de  validade;  
-LOCAÇÃO:  código, data/hora;  
+CARTAO: Tabela que armazenas as informações referentes ao cartão que o cliente irá usar para efetuar a locação da prancha.
+Código: Campo que armazena a identificação única do cartão utilizado para locar as pranchas.
+Numero: Campo que armazena o número do cartão.
+Bandeira: Campo que armazena a informação da bandeira do cartão.
+Data de  validade: Campo que armazena a data da validade da utilização do cartão.
+
+LOCAÇÃO:código, data/hora;  
 LOGIN: id, username e password.  
 CLIENTE: código, nome, telefone, email.  
 PRANCHA: Tabela que armazena os dados das pranchas.  
