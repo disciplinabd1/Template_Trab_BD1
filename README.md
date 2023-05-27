@@ -247,6 +247,7 @@ SELECT * FROM prancha
 SELECT * FROM locacao_prancha  
 ![Alt text](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/locacao_prancha.png)
 SELECT * FROM modelo_prancha  
+![Alt text](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/modelo_prancha.png)
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
