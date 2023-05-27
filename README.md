@@ -60,7 +60,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
         e tuplas falsas (Aplicar os conceitos de normalização abordados).   
         
-![Alt text](https://github.com/discipbd1/trab01/blob/master/images/Y?raw=true "Modelo Conceitual")
+![Alt text](https://github.com/discipbd1/trab01/blob/master/images/modelo-conceitual-bd1.jpeg?raw=true "Modelo Conceitual")
     
     
         
@@ -86,7 +86,7 @@ Telefone: Campo que armazena o telefone do Cliente.
 Email: Campo que armazena o email do cliente que vai alocar a prancha.<br>
 <br>
 CARTAO: Tabela que armazenas as informações referentes ao cartão que o cliente irá usar para efetuar a locação da prancha.<br>
-Código: Campo que armazena a identificação única do cartão utilizado para locar as pranchas.<br>
+id: Campo que armazena a identificação única do cartão utilizado para locar as pranchas.<br>
 Numero: Campo que armazena o número do cartão.<br>
 Bandeira: Campo que armazena a informação da bandeira do cartão.<br>
 Data de  validade: Campo que armazena a data da validade da utilização do cartão.<br>
@@ -97,12 +97,12 @@ data_hora: Campo que armazena a informação que contém a data/hora que a loca�
 
 <br />
 PRANCHA: Tabela que armazena informações sobre as pranchas que estarão disponíveis para os clientes alugarem.<br>
-Código: Campo que armazena a identificação unica da prancha.<br>
+id: Campo que armazena a identificação unica da prancha.<br>
 Status: Campo que armazena a informação se a prancha está disponível para locação ou não.<br>
 Preço: Campo que armazena o valor que será cobrado por hora que a prancha será locada.<br>
  <br>
 MODELO_PRANCHA: Tabela que armazena informações sobre quais são os tipos de pranchas que serão disponibilizadas pela loja para locação.<br>
-Código: Campo que armazena a identificação única do modelo de prancha.<br>
+id: Campo que armazena a identificação única do modelo de prancha.<br>
 Descrição: Campo que contem um texto que descreve o Modelo da prancha e suas especificidades.<br>
 Comprimento: Campo que contém a informação do tamanho da prancha.<br>
 Nome: Campo que armazena o nome da prancha.<br>
