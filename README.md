@@ -108,7 +108,7 @@ Comprimento: Campo que contém a informação do tamanho da prancha.<br>
 Nome: Campo que armazena o nome da prancha.<br>
 Foto: Campo que contem a URL com uma imagem do modelo da prancha.<br>
 
-**Relacionamentos:
+<br>**Relacionamentos:**<br>
 
 Efetua(Cliente/Login)
 Ao se cadastrar no site o cliente efetuará um login.
