@@ -73,11 +73,27 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     2) DETALHAMENTO DE ESPECIFICAÇÃO DAS ENTIDADES E RELACIONAMENTOS
 
 Entidades:<br />
+
+LOGIN: Tabela que armazena informações relacionadas ao login que o cliente usará para logar no Sistema.
+Id: Campo que armazena a identificação única do login utilizado pelo cliente.
+username: Campo que contém o nome de usuário utilizado pelo cliente para logar no Sistema.
+password: Campo que armazena a senha que o cliente usará para logar no sistema.
+
 CLIENTE: Tabela que armazena os dados dos clientes.  
-Código: Campo que armazena o ID do cliente.  
-Nome:Campo que armazena o nome do cliente.  
+id: Campo que armazena  a identificação unica do cliente.  
+Nome: Campo que armazena o nome do cliente.  
 Telefone: Campo que armazena o telefone do Cliente.  
 Email: Campo que armazena o email do cliente que vai alocar a prancha.
+
+CARTAO: Tabela que armazenas as informações referentes ao cartão que o cliente irá usar para efetuar a locação da prancha.
+Código: Campo que armazena a identificação única do cartão utilizado para locar as pranchas.
+Numero: Campo que armazena o número do cartão.
+Bandeira: Campo que armazena a informação da bandeira do cartão.
+Data de  validade: Campo que armazena a data da validade da utilização do cartão.
+
+LOCAÇÃO:
+id: Campo que armazena a identificação única da locação.
+data_hora: Campo que armazena a informação que contém a data/hora que a locação foi efetivada.
 
 <br />
 PRANCHA: Tabela que armazena informações sobre as pranchas que estarão disponíveis para os clientes alugarem.
@@ -92,23 +108,12 @@ Comprimento: Campo que contém a informação do tamanho da prancha.
 Nome: Campo que armazena o nome da prancha.
 Foto: Campo que contem a URL com uma imagem do modelo da prancha.
 
-CARTAO: Tabela que armazenas as informações referentes ao cartão que o cliente irá usar para efetuar a locação da prancha.
-Código: Campo que armazena a identificação única do cartão utilizado para locar as pranchas.
-Numero: Campo que armazena o número do cartão.
-Bandeira: Campo que armazena a informação da bandeira do cartão.
-Data de  validade: Campo que armazena a data da validade da utilização do cartão.
 
-LOCAÇÃO:código, data/hora;  
-LOGIN: id, username e password.  
-CLIENTE: código, nome, telefone, email.  
-PRANCHA: Tabela que armazena os dados das pranchas.  
-MODELO_PRANCHA: Tabela que armazena dados sobre as pranchas que serão locadas.  
-CARTAO: Tabela que armazena informações relativas ao cartão que será usado para efetuar a locação.  
-LOCAÇÃO:  código, data/hora;  
-LOGIN: Tabela que armazena informações relacionadas ao login que o cliente usará para logar no Sistema.
-Id: Campo que armazena a identificação única do login utilizado pelo cliente.
-username: Campo que contém o nome de usuário utilizado pelo cliente para logar no Sistema.
-password: Campo que armazena a senha que o cliente usará para logar no sistema.
+ 
+
+
+
+
 
 
 Relacionamentos:
