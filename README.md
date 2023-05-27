@@ -80,9 +80,9 @@ Telefone: Campo que armazena o telefone do Cliente.
 Email: Campo que armazena o email do cliente que vai alocar a prancha.
 
  PRANCHA: Tabela que armazena informações sobre as pranchas que estarão disponíveis para os clientes alugarem.
- Código: Campo que armazena a identificação unica da prancha.
- Status: Campo que armazena a informação se a prancha está disponível para locação ou não.
- Preço: Campo que armazena o valor que será cobrado por hora que a prancha será locada.
+Código: Campo que armazena a identificação unica da prancha.
+Status: Campo que armazena a informação se a prancha está disponível para locação ou não.
+Preço: Campo que armazena o valor que será cobrado por hora que a prancha será locada.
 
 MODELO_PRANCHA: Tabela que armazena informações sobre quais são os tipos de pranchas que serão disponibilizadas pela loja para locação.
 código: Campo que armazena a identificação única do modelo de prancha. descrição: Campo que contem um texto que descreve o modelo da prancha e suas especificidades.
