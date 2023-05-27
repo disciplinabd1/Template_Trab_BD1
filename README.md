@@ -83,7 +83,7 @@ CLIENTE: Tabela que armazena os dados dos clientes.
 id: Campo que armazena  a identificação unica do cliente.  
 Nome: Campo que armazena o nome do cliente.  
 Telefone: Campo que armazena o telefone do Cliente.  
-Email: Campo que armazena o email do cliente que vai alocar a prancha.
+Email: Campo que armazena o email do cliente que vai alocar a prancha.<br>
 <br>
 CARTAO: Tabela que armazenas as informações referentes ao cartão que o cliente irá usar para efetuar a locação da prancha.<br>
 Código: Campo que armazena a identificação única do cartão utilizado para locar as pranchas.<br>
