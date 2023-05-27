@@ -239,6 +239,7 @@ INSERT INTO MODELO_PRANCHA (nome,descricao,comprimento,foto) VALUES<br>
 SELECT * FROM login_cliente  
 ![Alt text](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/login_cliente.png)
 SELECT * FROM cartao  
+![Alt text](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/cartao.png)
 SELECT * FROM locacao  
 SELECT * FROM prancha  
 SELECT * FROM locacao_prancha  
