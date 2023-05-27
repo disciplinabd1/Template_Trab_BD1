@@ -236,22 +236,23 @@ INSERT INTO MODELO_PRANCHA (nome,descricao,comprimento,foto) VALUES<br>
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
-#####SELECT * FROM login_cliente  
+
+##### SELECT * FROM login_cliente  
 ![Alt text](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/login_cliente.png)
 
-#####SELECT * FROM cartao  
+##### SELECT * FROM cartao  
 ![Alt text](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/cartao.png)
 
-#####SELECT * FROM locacao 
+##### SELECT * FROM locacao 
 ![Alt text](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/locacao.png)
 
-#####SELECT * FROM prancha  
+##### SELECT * FROM prancha  
 ![Alt text](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/prancha.png)
 
-#####SELECT * FROM locacao_prancha  
+##### SELECT * FROM locacao_prancha  
 ![Alt text](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/locacao_prancha.png)
 
-#####SELECT * FROM modelo_prancha  
+##### SELECT * FROM modelo_prancha  
 ![Alt text](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/modelo_prancha.png)
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
