@@ -243,6 +243,7 @@ SELECT * FROM cartao
 SELECT * FROM locacao 
 ![Alt text](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/locacao.png)
 SELECT * FROM prancha  
+![Alt text](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/prancha.png)
 SELECT * FROM locacao_prancha  
 ![Alt text](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/locacao_prancha.png)
 SELECT * FROM modelo_prancha  
