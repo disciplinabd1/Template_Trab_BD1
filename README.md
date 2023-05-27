@@ -192,26 +192,28 @@ VALUES	(1, 4, 'Alugada', 1, 3),
 (7, 8, 'Alugada', 7, 7);  
   
 ###### INSERÇÃO NA TABELA LOCACAO
-INSERT INTO LOCACAO (data_hora,FK_CARTAO_ID) VALUES
-('12/06/2023 14:32:43', 2),
-('2023-06-11 16:34:42',	2),
-('2023-07-12 09:01:12',	3),
-('2023-08-09 00:02:45',	5),
-('2023-08-09 13:11:34', 4),
-('2023-09-09 12:33:34',	6),
-('2023-08-04 14:33:43',	7);
+INSERT INTO LOCACAO (data_hora,FK_CARTAO_ID) VALUES<br>
+('12/06/2023 14:32:43', 2),<br>
+('2023-06-11 16:34:42',	2),<br>
+('2023-07-12 09:01:12',	3),<br>
+('2023-08-09 00:02:45',	5),<br>
+('2023-08-09 13:11:34', 4),<br>
+('2023-09-09 12:33:34',	6),<br>
+('2023-08-04 14:33:43',	7);<br>
 
  
 
-###### INSERÇÃO NA TABELA MODELO_PRANCHA
-INSERT INTO MODELO_PRANCHA (nome,descricao,comprimento,foto) VALUES  
-('Longboard','É um tipo de prancha de surf caracterizada por sua grande extensão, variando entre 9 e 12 pés de comprimento, e uma largura que geralmente é maior que a de outras pranchas de surf.', 2.9, 'https://s-media-cache-ak0.pinimg.com/originals/fd/82/8d/fd828daf3d8630fe70bc7a9d31701aa7.jpg'),  
-('Shortboard','São pranchas menores, indicadas para pessoas que já tem um pouco de experiência no surf.',1.68,'https://th.bing.com/th/id/OIP.X1-ovzrhyQC9BPdwgb5jYQHaHa?pid=ImgDet&rs=1'),  
-('Funboard','São as pranchas mais recomendadas para iniciantes no Surf. Possuem bastante área distribuída por toda sua extensão.',2.29,'https://cdn.shopify.com/s/files/1/0206/5056/products/Green_Thumb_2048x.jpg?v=1506107831'),  
-('Fish','Essas pranchas são caracterizadas por sua forma única, que apresenta uma largura e volume maior na área do meio da prancha, além de uma rabeta em forma de swallow (andorinha), que é mais larga e curta do que as rabetas tradicionais.',1.63,'https://th.bing.com/th/id/R.2bf47c66a7d1dfa4327a843181f97c75?rik=vBnjsCocFmCtlw&pid=ImgRaw&r=0'),  
-('Evolution','É a melhor para aprender a surfar porque é a maior e grossa, além de muito estáveis.',1.83,'https://images.offerup.com/7u6Bx7vTuvHvQ-yVlLnn36R9NM4=/600x800/8eba/8eba4d5873f747d4bc273ebde96d1c58.jpg'),  
-('Gun', 'Pranchas maiores e com o bico arredondado que variam de 8 a 12 pés. Por ser bem comprida e pesada, é uma prancha estável e que entra na onda com mais facilidade.',3.05,'https://th.bing.com/th/id/OIP.Dw3Sw1SG-OUWSYWeCogaEgHaHa?pid=ImgDet&rs=1'),  
-('Softboard','Uma prancha softboard é uma prancha de surf feita com um núcleo de espuma macia e uma camada superior de material emborrachado, que fornece uma superfície antiderrapante e segura para o surfista ficar em pé. Essas pranchas são especialmente projetadas para iniciantes e surfistas intermediários, que estão aprendendo a surfar ou querem melhorar suas habilidades.',2.74,'https://th.bing.com/th/id/R.a578f11895e66c5045dc2ddf8e862a64?rik=ge07XvUSFls%2f3A&pid=ImgRaw&r=0');  
+###### INSERÇÃO NA TABELA MODELO_PRANCHA <br>
+INSERT INTO MODELO_PRANCHA (nome,descricao,comprimento,foto) VALUES<br>
+('Longboard','É um tipo de prancha de surf caracterizada por sua grande extensão, variando entre 9 e 12 pés de comprimento, e uma largura que geralmente é maior que a de outras pranchas de surf.', 2.9, 'https://s-media-cache-ak0.pinimg.com/originals/fd/82/8d/fd828daf3d8630fe70bc7a9d31701aa7.jpg'),<br>
+('Shortboard','São pranchas menores, indicadas para pessoas que já tem um pouco de experiência no surf.',1.68,'https://th.bing.com/th/id/OIP.X1-ovzrhyQC9BPdwgb5jYQHaHa?pid=ImgDet&rs=1'),<br>
+('Funboard','São as pranchas mais recomendadas para iniciantes no Surf. Possuem bastante área distribuída por toda sua extensão.',2.29,'https://cdn.shopify.com/s/files/1/0206/5056/products/Green_Thumb_2048x.jpg?v=1506107831'),<br>
+('Fish','Essas pranchas são caracterizadas por sua forma única, que apresenta uma largura e volume maior na área do meio da prancha, além de uma rabeta em forma de swallow (andorinha), que é mais larga e curta do que as rabetas tradicionais.',1.63,'https://th.bing.com/th/id/R.2bf47c66a7d1dfa4327a843181f97c75?rik=vBnjsCocFmCtlw&pid=ImgRaw&r=0'),<br>
+('Evolution','É a melhor para aprender a surfar porque é a maior e grossa, além de muito estáveis.',1.83,'https://images.offerup.com/7u6Bx7vTuvHvQ-yVlLnn36R9NM4=/600x800/8eba/8eba4d5873f747d4bc273ebde96d1c58.jpg'),<br>
+('Gun', 'Pranchas maiores e com o bico arredondado que variam de 8 a 12 pés. Por ser bem comprida e pesada, é uma prancha estável e que entra na onda com mais facilidade.',3.05,'https://th.bing.com/th/id/OIP.Dw3Sw1SG-OUWSYWeCogaEgHaHa?pid=ImgDet&rs=1'),<br>
+('Softboard','Uma prancha softboard é uma prancha de surf feita com um núcleo de espuma macia e uma camada superior de material emborrachado, que fornece uma superfície antiderrapante e segura para o surfista ficar em pé. Essas pranchas são especialmente projetadas para iniciantes e surfistas intermediários, que estão aprendendo a surfar ou querem melhorar suas habilidades.',2.74,'https://th.bing.com/th/id/R.a578f11895e66c5045dc2ddf8e862a64?rik=ge07XvUSFls%2f3A&pid=ImgRaw&r=0');
+
+ 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
