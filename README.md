@@ -124,7 +124,7 @@ Um modelo de prancha pode estar associado a várias pranchas.
 
 ### 6	MODELO LÓGICO<br>
 
-![Alt text](https://github.com/disciplinabd1/Template_Trab_BD1/blob/imagens/modelo-logico-bd1.jpeg?raw=true "Modelo Lógico")
+![Alt text](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/images/modelo-logico-bd1.jpeg?raw=true "Modelo Lógico")
 
 
 ### 7	MODELO FÍSICO<br>
