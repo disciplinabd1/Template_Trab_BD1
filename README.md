@@ -22,10 +22,11 @@ Descrição do mini-mundo!
 > Um cliente deseja um sistema onde possa alugar suas pranchas de forma online, nesse sistema uma prancha só pode ser alugada para um único cliente. Cada prancha não deve estar associada diretamente ao cliente e sim a locação. Uma locação pode comportar uma ou várias pranchas. Cada cliente pode ter um  ou vários cartões de crédito cadastrados, mas cada cartão só pode estar associado a um cliente. Por fim, cada cliente deve estar associado somente a uma única identificação de login, e o login deve ser exclusivo deste cliente. Cada LOCAÇÃO deve estar relacionada apenas a um único cartão de um determinado cliente (pois o sistema só permite compras por meio de cartão). Do CLIENTE devemos registrar as informações de código, nome, telefone e e-mail, já com relação a cada PRANCHA devemos registrar o código, status, nome e preço, cada prancha também deve ter um modelo e esse modelo precisa ter descrição e comprimento.  Com relação a cada CARTÃO devemos saber o número , bandeira e data de validade e o momento que o cartão foi inserido no sistema.  Sobre cada  LOCAÇÃO deve-se registrar um código, data/hora e tempo de locação da prancha. Com relação aos dados de LOGIN deve-se armazenar o username e password de cada usuário (mas estes não devem ser chaves de login). 
 
 ### 4.PROTOTIPAÇÃO, PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
+
 #### 4.1 RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 
 
-![Alt text](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/balsamiq.png?raw=true "Title")
+![Alt text](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/images/prototipo_bd1.png?raw=true "Title")
 
 ![Arquivo PDF do Protótipo Balsamiq feito para Empresa Surfistinha](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/arquivos/SistemaSurfista_Fernanda_Lorenzo_Maressa_Rafael%20(1).pdf)
 ![Arquivo PDF do Protótipo Balsamiq feito para Empresa Surfistinha (adimistração)](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/arquivos/AdmSite.pdf)
@@ -35,11 +36,11 @@ Descrição do mini-mundo!
  
 > A Empresa Surfistinha precisa inicialmente dos seguintes relatórios:
 
-* Relatório mostrando todas as pranchas do sistema. O relatório deve mostrar o código da prancha, o modelo e se a prancha está disponível ou alugada.
-* Relatório relacionando cliente, modelo de prancha, mostrando qual o modelo mais alugado por cada cliente. O relatório deve conter o nome do cliente, o nome do modelo de prancha mais alugado por ele e o total de vezes que ele alugou o modelo.
-* Relatório relacionando cliente e número de locações, o relatório deve conter nome do cliente, telefone e email, além do número de locações feito pelo cliente.
-* Relatório mostrando os dados referentes a cada prancha, descrição, comprimento, nome e quantidade de pranchas do referente modelo, além do número de locações de cada modelo.
-* Relatório relacionando cliente e o prazo mais utilizado por ele. O relatório deve mostrar o nome do cliente, o número de horas do prazo, e o total de vezes que o cliente requisitou o prazo.
+    * Relatório mostrando todas as pranchas do sistema. O relatório deve mostrar o código da prancha, o modelo e se a prancha está disponível ou alugada.
+    * Relatório relacionando cliente, modelo de prancha, mostrando qual o modelo mais alugado por cada cliente. O relatório deve conter o nome do cliente, o nome do modelo de prancha mais alugado por ele e o total de vezes que ele alugou o modelo.
+    * Relatório relacionando cliente e número de locações, o relatório deve conter nome do cliente, telefone e email, além do número de locações feito pelo cliente.
+    * Relatório mostrando os dados referentes a cada prancha, descrição, comprimento, nome e quantidade de pranchas do referente modelo, além do número de locações de cada modelo.
+    * Relatório relacionando cliente e o prazo mais utilizado por ele. O relatório deve mostrar o nome do cliente, o número de horas do prazo, e o total de vezes que o cliente requisitou o prazo.
  
  
 #### 4.3 TABELA DE DADOS DO SISTEMA:
@@ -61,73 +62,70 @@ Descrição do mini-mundo!
 #### 5.2 Descrição dos dados 
     2) DETALHAMENTO DE ESPECIFICAÇÃO DAS ENTIDADES E RELACIONAMENTOS
 
-Entidades:<br />
+    ##Entidades:
 
-LOGIN: Tabela que armazena informações relacionadas ao login que o cliente usará para logar no Sistema.<br>
-Id: Campo que armazena a identificação única do login utilizado pelo cliente.<br>
-username: Campo que contém o nome de usuário utilizado pelo cliente para logar no Sistema.<br>
-password: Campo que armazena a senha que o cliente usará para logar no sistema.<br>
-<br>
-CLIENTE: Tabela que armazena os dados dos clientes.  
-id: Campo que armazena  a identificação unica do cliente.  
-Nome: Campo que armazena o nome do cliente.  
-Telefone: Campo que armazena o telefone do Cliente.  
-Email: Campo que armazena o email do cliente que vai alocar a prancha.<br>
-<br>
-CARTAO: Tabela que armazenas as informações referentes ao cartão que o cliente irá usar para efetuar a locação da prancha.<br>
-id: Campo que armazena a identificação única do cartão utilizado para locar as pranchas.<br>
-Numero: Campo que armazena o número do cartão.<br>
-Bandeira: Campo que armazena a informação da bandeira do cartão.<br>
-Data de  validade: Campo que armazena a data da validade da utilização do cartão.<br>
-<br>
-LOCAÇÃO: Tabela que armazena 
-id: Campo que armazena a identificação única da locação.<br>
-data_hora: Campo que armazena a informação que contém a data/hora que a locação foi efetivada.<br>
+    LOGIN: Tabela que armazena informações relacionadas ao login que o cliente usará para logar no Sistema.
+    Id: Campo que armazena a identificação única do login utilizado pelo cliente.
+    username: Campo que contém o nome de usuário utilizado pelo cliente para logar no Sistema.
+    password: Campo que armazena a senha que o cliente usará para logar no sistema.
+    
+    CLIENTE: Tabela que armazena os dados dos clientes.  
+    id: Campo que armazena  a identificação unica do cliente.  
+    Nome: Campo que armazena o nome do cliente.  
+    Telefone: Campo que armazena o telefone do Cliente.  
+    Email: Campo que armazena o email do cliente que vai alocar a prancha.
+    
+    CARTAO: Tabela que armazenas as informações referentes ao cartão que o cliente irá usar para efetuar a locação da prancha.
+    id: Campo que armazena a identificação única do cartão utilizado para locar as pranchas.
+    Numero: Campo que armazena o número do cartão.
+    Bandeira: Campo que armazena a informação da bandeira do cartão.
+    Data de  validade: Campo que armazena a data da validade da utilização do cartão.
+    
+    LOCAÇÃO: Tabela que armazena 
+    id: Campo que armazena a identificação única da locação.
+    data_hora: Campo que armazena a informação que contém a data/hora que a locação foi efetivada.
+    
+    PRANCHA: Tabela que armazena informações sobre as pranchas que estarão disponíveis para os clientes alugarem.
+    id: Campo que armazena a identificação unica da prancha.
+    Status: Campo que armazena a informação se a prancha está disponível para locação ou não.
+    Preço: Campo que armazena o valor que será cobrado por hora que a prancha será locada.
+    
+    MODELO_PRANCHA: Tabela que armazena informações sobre quais são os tipos de pranchas que serão disponibilizadas pela loja para locação.
+    id: Campo que armazena a identificação única do modelo de prancha.
+    Descrição: Campo que contem um texto que descreve o Modelo da prancha e suas especificidades.
+    Comprimento: Campo que contém a informação do tamanho da prancha.
+    Nome: Campo que armazena o nome da prancha.<br>
+    Foto: Campo que contem a URL com uma imagem do modelo da prancha.<br>
 
-<br />
-PRANCHA: Tabela que armazena informações sobre as pranchas que estarão disponíveis para os clientes alugarem.<br>
-id: Campo que armazena a identificação unica da prancha.<br>
-Status: Campo que armazena a informação se a prancha está disponível para locação ou não.<br>
-Preço: Campo que armazena o valor que será cobrado por hora que a prancha será locada.<br>
- <br>
-MODELO_PRANCHA: Tabela que armazena informações sobre quais são os tipos de pranchas que serão disponibilizadas pela loja para locação.<br>
-id: Campo que armazena a identificação única do modelo de prancha.<br>
-Descrição: Campo que contem um texto que descreve o Modelo da prancha e suas especificidades.<br>
-Comprimento: Campo que contém a informação do tamanho da prancha.<br>
-Nome: Campo que armazena o nome da prancha.<br>
-Foto: Campo que contem a URL com uma imagem do modelo da prancha.<br>
+    ##Relacionamentos:
 
-<br>**Relacionamentos:**<br>
+    Efetua(Cliente/Login)
+    Ao se cadastrar no site o cliente efetuará um login.
+    Um login só pode estar relacionado a um cliente.
 
-Efetua(Cliente/Login)
-Ao se cadastrar no site o cliente efetuará um login.
-Um login só pode estar relacionado a um cliente.
+    Possui(Cliente/Cartão)
+    Um cliente pode ter um ou vários cartões cadastrados
+    Um cartão é associado a um cliente
 
-Possui(Cliente/Cartão)
-Um cliente pode ter um ou vários cartões cadastrados
-Um cartão é associado a um cliente
+    Possibilita(Cartão/Locação): 
+    Um cartão possibilita a locação das pranchas. 
+    Para conseguir finalizar uma locação o cliente precisa ter um cartão.
 
-Possibilita(Cartão/Locação): 
-Um cartão possibilita a locação das pranchas. 
-Para conseguir finalizar uma locação o cliente precisa ter um cartão.
+    Loca(Locação/Prancha)
+    Cada locação pode ter uma ou várias pranchas.
+    Cada prancha pode estar relacionada a uma locação.
 
-
-Loca(Locação/Prancha)
-Cada locação pode ter uma ou várias pranchas.
-Cada prancha pode estar relacionada a uma locação.
-
-
-Possui(Prancha/Modelo Prancha)
-Uma prancha é associada a um modelo de prancha.
-Um modelo de prancha pode estar associado a várias pranchas.
+    Possui(Prancha/Modelo Prancha)
+    Uma prancha é associada a um modelo de prancha.
+    Um modelo de prancha pode estar associado a várias pranchas.
 
 
-### 6	MODELO LÓGICO<br>
+### 6.MODELO LÓGICO<br>
 
 ![Alt text](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/images/modelo-logico-bd1.jpeg?raw=true "Modelo Lógico")
 
 
-### 7	MODELO FÍSICO<br>
+### 7.MODELO FÍSICO<br>
 
      CREATE TABLE LOGIN_CLIENTE(
       ID SERIAL PRIMARY KEY,
@@ -181,7 +179,7 @@ Um modelo de prancha pode estar associado a várias pranchas.
 
 
        
-### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
+### 8.INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 
 
     ---- INSERÇÃO NA TABELA LOGIN_CLIENTE ----
@@ -246,7 +244,7 @@ Um modelo de prancha pode estar associado a várias pranchas.
     ('Softboard','Uma prancha softboard é uma prancha de surf feita com um núcleo de espuma macia e uma camada superior de material emborrachado, que fornece uma superfície antiderrapante e segura para o surfista ficar em pé. Essas pranchas são especialmente projetadas para iniciantes e surfistas intermediários, que estão aprendendo a surfar ou querem melhorar suas habilidades.',2.74,'https://th.bing.com/th/id/R.a578f11895e66c5045dc2ddf8e862a64?rik=ge07XvUSFls%2f3A&pid=ImgRaw&r=0');
 
  
-### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
+### 9.TABELAS E PRINCIPAIS CONSULTAS<br>
     
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 
