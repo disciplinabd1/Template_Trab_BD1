@@ -23,17 +23,16 @@ Descrição do mini-mundo!
 
 ### 4.PROTOTIPAÇÃO, PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
 #### 4.1 RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
-Neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
 
-Sugestão: https://balsamiq.com/products/mockups/<br>
 
 ![Alt text](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/balsamiq.png?raw=true "Title")
+
 ![Arquivo PDF do Protótipo Balsamiq feito para Empresa Surfistinha](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/arquivos/SistemaSurfista_Fernanda_Lorenzo_Maressa_Rafael%20(1).pdf)
 ![Arquivo PDF do Protótipo Balsamiq feito para Empresa Surfistinha (adimistração)](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/arquivos/AdmSite.pdf)
+
+
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-    a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
-    b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
-    
+ 
 > A Empresa Surfistinha precisa inicialmente dos seguintes relatórios:
 
 * Relatório mostrando todas as pranchas do sistema. O relatório deve mostrar o código da prancha, o modelo e se a prancha está disponível ou alugada.
@@ -45,7 +44,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
  
 #### 4.3 TABELA DE DADOS DO SISTEMA:
     
-![Tabela de dados da Empresa Surfistinha](https://github.com/discipbd1/trab01/blob/master/arquivos/Trabalho_BD1_tabela_de_dados.xlsx?raw=true "Tabela - Empresa Surfistinha")
+![Tabela de dados da Empresa Surfistinha](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/arquivos/Trabalho_BD1_tabela_de_dados.xlsx?raw=true "Tabela - Empresa Surfistinha")
     
     
 ### 5.MODELO CONCEITUAL<br>
