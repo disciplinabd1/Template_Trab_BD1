@@ -50,7 +50,7 @@ Descrição do mini-mundo!
     
 ### 5.MODELO CONCEITUAL<br>
         
-![Alt text]("https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/images/modeloConceitual.png")
+![Alt text](https://github.com/disciplinabd1/Template_Trab_BD1/blob/master/images/raw=true "Title")
     
     
         
