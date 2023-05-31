@@ -56,8 +56,13 @@ Descrição do mini-mundo!
         
     
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
-    [Grupo02]: [Nomes dos que participaram na avaliação]
+    [Grupo01]: [Micaely e Kailany]
+    - login e cliente estao com a ordem invertida (ACATADO)
+    - cliente poderia ser facilmente integrado com login, os atributos de login podia fazer parte de cliente (NÃO ACATADO)
+    
+    [Grupo02]: [Perseu]
+    - Adicionar um ramo de cliente para locação, deixando claro a locação feita pelo cliente (NÃO ACATADO)
+
 
 #### 5.2 Descrição dos dados 
     2) DETALHAMENTO DE ESPECIFICAÇÃO DAS ENTIDADES E RELACIONAMENTOS
