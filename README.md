@@ -291,7 +291,7 @@ Descrição do mini-mundo!
     a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
     b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
     
-    Consulta 1: Retorna o nome e o número do cartão de todos os clientes, ordenados pelo nome do cliente em ordem alfabética.
+   Consulta 1: Retorna o nome e o número do cartão de todos os clientes, ordenados pelo nome do cliente em ordem alfabética.
     SELECT lc.NOME, c.NUMERO 
     FROM LOGIN_CLIENTE lc 
     INNER JOIN CARTAO c ON lc.ID = c.FK_LOGIN_CLIENTE_ID 
