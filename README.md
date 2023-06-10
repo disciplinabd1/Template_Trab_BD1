@@ -288,24 +288,23 @@ Descrição do mini-mundo!
     b) Criar minimo 3 de atualização
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
-    a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
-    b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
     
-Consulta 1: Retorna o nome e o número do cartão de todos os clientes, ordenados pelo nome do cliente em ordem alfabética.
+    
+**Consulta 1: Retorna o nome e o número do cartão de todos os clientes, ordenados pelo nome do cliente em ordem alfabética.**
 
      SELECT lc.NOME, c.NUMERO 
      FROM LOGIN_CLIENTE lc 
      INNER JOIN CARTAO c ON lc.ID = c.FK_LOGIN_CLIENTE_ID 
      ORDER BY lc.NOME ASC;
 
-Consulta 2: Retorna o nome e o preço de todas as pranchas, ordenadas pelo preço em ordem decrescente.
+**Consulta 2: Retorna o nome e o preço de todas as pranchas, ordenadas pelo preço em ordem decrescente.**
 
      SELECT mp.NOME, p.PRECO
      FROM MODELO_PRANCHA mp
      NNER JOIN PRANCHA p ON mp.ID = p.FK_MODELO_PRANCHA_ID
      ORDER BY p.PRECO DESC;
      
-Consulta 3: Retorna o nome do cliente, o número do cartão e a data de locação, ordenados pela data de locação em ordem crescente.
+**Consulta 3: Retorna o nome do cliente, o número do cartão e a data de locação, ordenados pela data de locação em ordem crescente.**
 
      SELECT lc.NOME, c.NUMERO, l.DATA_HORA
      FROM LOGIN_CLIENTE lc
@@ -313,7 +312,7 @@ Consulta 3: Retorna o nome do cliente, o número do cartão e a data de locaçã
      INNER JOIN LOCACAO l ON c.ID = l.FK_CARTAO_ID
      ORDER BY l.DATA_HORA ASC;
           
-Consulta 4: Retorna o nome do cliente, número do cartão, descrição da prancha e a data de locação para as locações que foram realizadas após uma determinada data, ordenadas pela data de locação em ordem decrescente.
+**Consulta 4: Retorna o nome do cliente, número do cartão, descrição da prancha e a data de locação para as locações que foram realizadas após uma determinada data, ordenadas pela data de locação em ordem decrescente.**
 
      SELECT lc.NOME, c.NUMERO, mp.DESCRICAO, l.DATA_HORA
      FROM LOGIN_CLIENTE lc
@@ -325,7 +324,7 @@ Consulta 4: Retorna o nome do cliente, número do cartão, descrição da pranch
      WHERE l.DATA_HORA > '2023-06-01'
      ORDER BY l.DATA_HORA DESC;
      
-Consulta 5: Retorna todas as informações de locações ativas, incluindo o nome do cliente, número do cartão, descrição da prancha, data de locação e tempo de locação.
+**Consulta 5: Retorna todas as informações de locações ativas, incluindo o nome do cliente, número do cartão, descrição da prancha, data de locação e tempo de locação.**
 
      SELECT lc.NOME AS nome_cliente, c.NUMERO AS numero_cartao, mp.NOME AS nome_prancha, l.DATA_HORA, lp.TEMPO_LOCACAO
      FROM LOGIN_CLIENTE lc
@@ -336,7 +335,7 @@ Consulta 5: Retorna todas as informações de locações ativas, incluindo o nom
      INNER JOIN MODELO_PRANCHA mp ON p.FK_MODELO_PRANCHA_ID = mp.ID
      WHERE lp.STATUS = 'Alugada';
      
-Consulta 6: Retorna o nome do cliente e a data de locação para todas as locações ordenadas pelo nome do cliente em ordem alfabética.
+**Consulta 6: Retorna o nome do cliente e a data de locação para todas as locações ordenadas pelo nome do cliente em ordem alfabética.**
 
      SELECT lc.NOME, l.DATA_HORA
      FROM LOGIN_CLIENTE lc
@@ -356,8 +355,45 @@ Consulta 6: Retorna o nome do cliente e a data de locação para todas as locaç
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
      a) Criar minimo 1 envolvendo GROUP BY
      b) Criar minimo 1 envolvendo algum tipo de junção
+     
+**Subconsulta 1: Retorna o nome dos clientes que possuem uma locação ativa.**
 
-># Marco de Entrega 02: Do item 9.2 até o ítem 9.10<br>
+     SELECT NOME
+     FROM LOGIN_CLIENTE
+     WHERE ID IN (
+       SELECT DISTINCT lc.ID
+       FROM LOGIN_CLIENTE lc
+       INNER JOIN CARTAO c ON lc.ID = c.FK_LOGIN_CLIENTE_ID
+       INNER JOIN LOCACAO l ON c.ID = l.FK_CARTAO_ID
+       INNER JOIN LOCACAO_PRANCHA lp ON l.ID = lp.FK_LOCACAO_ID
+       WHERE lp.STATUS = 'Alugada');
+       
+**Subconsulta 2: Retorna a média de tempo de locação das pranchas.**
+
+       SELECT AVG(lp.TEMPO_LOCACAO) AS media_locacao
+       FROM LOCACAO_PRANCHA lp;
+       
+**Subconsulta 3: Retorna o número de locações ativas por cliente.**
+
+       SELECT lc.NOME, COUNT(*) AS NUMERO_LOCACOES
+       FROM LOGIN_CLIENTE lc
+       INNER JOIN CARTAO c ON lc.ID = c.FK_LOGIN_CLIENTE_ID
+       INNER JOIN LOCACAO l ON c.ID = l.FK_CARTAO_ID
+       INNER JOIN LOCACAO_PRANCHA lp ON l.ID = lp.FK_LOCACAO_ID
+       WHERE lp.STATUS = 'Alugada'
+       GROUP BY lc.NOME;
+       
+**Subconsulta 4: Retorna o nome dos clientes que alugaram pranchas e a média de tempo de locação por cliente.**
+
+       SELECT lc.NOME, AVG(lp.TEMPO_LOCACAO) AS media_tempo_locacao
+       FROM LOGIN_CLIENTE lc
+       INNER JOIN CARTAO c ON lc.ID = c.FK_LOGIN_CLIENTE_ID
+       INNER JOIN LOCACAO l ON c.ID = l.FK_CARTAO_ID
+       INNER JOIN LOCACAO_PRANCHA lp ON l.ID = lp.FK_LOCACAO_ID
+       WHERE lp.STATUS = 'Alugada'
+       GROUP BY lc.NOME;
+
+
 
 ### 10 RELATÓRIOS E GRÁFICOS
 
