@@ -274,6 +274,18 @@ https://colab.research.google.com/drive/1KcrMp_ruP2bqOZ3ssEwCbaCR5fvNI2QI#scroll
    SELECT *
    FROM LOCACAO_PRANCHA
    WHERE NOT STATUS = 'Disponivel';
+   
+**Consulta 4: Retorna todos os registros da tabela CARTAO onde a bandeira é 'VISA' e a data de validade é posterior a 1º de janeiro de 2024, ou a bandeira é 'Mastercard' e a data de validade não é posterior a 1º de janeiro de 2025.**
+
+  SELECT *
+  FROM CARTAO
+  WHERE (BANDEIRA = 'VISA' AND DT_VALIDADE >= '2024-01-01') OR (BANDEIRA = 'Mastercard' AND NOT DT_VALIDADE >= '2025-01-01');
+  
+**Consulta 5: Retorna os itens de MODELO_PRANCHA que tem um comprimento entre 2.5 a 3 ou que o nome termina com "board".**
+
+  SELECT *
+  FROM MODELO_PRANCHA
+  WHERE (COMPRIMENTO >= 2.5 AND COMPRIMENTO <= 3.0) OR (NOME LIKE '%board');
     
     
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
