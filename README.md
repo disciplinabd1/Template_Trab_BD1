@@ -298,8 +298,51 @@ Consulta 1: Retorna o nome e o número do cartão de todos os clientes, ordenado
      INNER JOIN CARTAO c ON lc.ID = c.FK_LOGIN_CLIENTE_ID 
      ORDER BY lc.NOME ASC;
 
+Consulta 2: Retorna o nome e o preço de todas as pranchas, ordenadas pelo preço em ordem decrescente.
 
+     SELECT mp.NOME, p.PRECO
+     FROM MODELO_PRANCHA mp
+     NNER JOIN PRANCHA p ON mp.ID = p.FK_MODELO_PRANCHA_ID
+     ORDER BY p.PRECO DESC;
+     
+Consulta 3: Retorna o nome do cliente, o número do cartão e a data de locação, ordenados pela data de locação em ordem crescente.
 
+     SELECT lc.NOME, c.NUMERO, l.DATA_HORA
+     FROM LOGIN_CLIENTE lc
+     INNER JOIN CARTAO c ON lc.ID = c.FK_LOGIN_CLIENTE_ID
+     INNER JOIN LOCACAO l ON c.ID = l.FK_CARTAO_ID
+     ORDER BY l.DATA_HORA ASC;
+          
+Consulta 4: Retorna o nome do cliente, número do cartão, descrição da prancha e a data de locação para as locações que foram realizadas após uma determinada data, ordenadas pela data de locação em ordem decrescente.
+
+     SELECT lc.NOME, c.NUMERO, mp.DESCRICAO, l.DATA_HORA
+     FROM LOGIN_CLIENTE lc
+     INNER JOIN CARTAO c ON lc.ID = c.FK_LOGIN_CLIENTE_ID
+     INNER JOIN LOCACAO l ON c.ID = l.FK_CARTAO_ID
+     INNER JOIN LOCACAO_PRANCHA lp ON l.ID = lp.FK_LOCACAO_ID
+     INNER JOIN PRANCHA p ON lp.FK_PRANCHA_ID = p.ID
+     INNER JOIN MODELO_PRANCHA mp ON p.FK_MODELO_PRANCHA_ID = mp.ID
+     WHERE l.DATA_HORA > '2023-06-01'
+     ORDER BY l.DATA_HORA DESC;
+     
+Consulta 5: Retorna todas as informações de locações ativas, incluindo o nome do cliente, número do cartão, descrição da prancha, data de locação e tempo de locação.
+
+     SELECT lc.NOME AS nome_cliente, c.NUMERO AS numero_cartao, mp.NOME AS nome_prancha, l.DATA_HORA, lp.TEMPO_LOCACAO
+     FROM LOGIN_CLIENTE lc
+     INNER JOIN CARTAO c ON lc.ID = c.FK_LOGIN_CLIENTE_ID
+     INNER JOIN LOCACAO l ON c.ID = l.FK_CARTAO_ID
+     INNER JOIN LOCACAO_PRANCHA lp ON l.ID = lp.FK_LOCACAO_ID
+     INNER JOIN PRANCHA p ON lp.FK_PRANCHA_ID = p.ID
+     INNER JOIN MODELO_PRANCHA mp ON p.FK_MODELO_PRANCHA_ID = mp.ID
+     WHERE lp.STATUS = 'Alugada';
+     
+Consulta 6: Retorna o nome do cliente e a data de locação para todas as locações ordenadas pelo nome do cliente em ordem alfabética.
+
+     SELECT lc.NOME, l.DATA_HORA
+     FROM LOGIN_CLIENTE lc
+     INNER JOIN CARTAO c ON lc.ID = c.FK_LOGIN_CLIENTE_ID
+     ORDER BY lc.NOME ASC;
+     
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
     a) Criar minimo 2 envolvendo algum tipo de junção
 
