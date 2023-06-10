@@ -290,6 +290,14 @@ Descrição do mini-mundo!
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
     a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
     b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
+    
+    Consulta 1: Retorna o nome e o número do cartão de todos os clientes, ordenados pelo nome do cliente em ordem alfabética.
+    SELECT lc.NOME, c.NUMERO 
+    FROM LOGIN_CLIENTE lc 
+    INNER JOIN CARTAO c ON lc.ID = c.FK_LOGIN_CLIENTE_ID 
+    ORDER BY lc.NOME ASC;
+
+
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
     a) Criar minimo 2 envolvendo algum tipo de junção
