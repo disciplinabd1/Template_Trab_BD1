@@ -292,6 +292,18 @@ https://colab.research.google.com/drive/1KcrMp_ruP2bqOZ3ssEwCbaCR5fvNI2QI#scroll
     SELECT ID, PRECO, PRECO + 10 AS PRECO_AUMENTADO
     FROM PRANCHA;
     
+**Consulta 7: Retorna as colunas de ID e PRECO e renomeia o resultado como PRECO_REDUZIDO dinuido 5 de todos os itens**
+
+    SELECT ID, PRECO, PRECO - 5 AS PRECO_REDUZIDO
+    FROM PRANCHA;
+    
+ **Consulta 8: Retorna os itens que tem o tempo de locação multiplicado por 2 maior que 8 e o status como 'Alugado'**
+ 
+    SELECT *
+    FROM LOCACAO_PRANCHA
+    WHERE TEMPO_LOCACAO * 2 > 8 AND STATUS = 'Alugada';
+
+    
     
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
     b) Criar no mínimo 3 consultas com operadores aritméticos 
