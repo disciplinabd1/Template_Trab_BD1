@@ -256,6 +256,14 @@ https://colab.research.google.com/drive/1KcrMp_ruP2bqOZ3ssEwCbaCR5fvNI2QI#scroll
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
+
+**Consuta 1: Retorna dados dos cartões da bandeira Mastercard com vencimento depois de 2024.**
+
+    SELECT *
+    FROM CARTAO
+    WHERE BANDEIRA = 'Mastercard' AND DT_VALIDADE > '2024-12-31';
+    
+    
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
     b) Criar no mínimo 3 consultas com operadores aritméticos 
     c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
