@@ -263,6 +263,12 @@ https://colab.research.google.com/drive/1KcrMp_ruP2bqOZ3ssEwCbaCR5fvNI2QI#scroll
     FROM CARTAO
     WHERE BANDEIRA = 'Mastercard' AND DT_VALIDADE > '2024-12-31';
     
+**Consulta 2: Retorna as locações com status disponivel ou tempo de locação menor que 4**
+
+   SELECT *
+   FROM LOCACAO_PRANCHA
+   WHERE STATUS = 'Disponivel' OR TEMPO_LOCACAO < 5;
+    
     
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
     b) Criar no mínimo 3 consultas com operadores aritméticos 
