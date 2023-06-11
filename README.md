@@ -409,6 +409,38 @@ https://colab.research.google.com/drive/1KcrMp_ruP2bqOZ3ssEwCbaCR5fvNI2QI#scroll
     FROM vw_pranchasDisponiveis;
     
  **VIEW 2: **
+ 
+    CREATE VIEW vw_locacoes_ativas AS
+    SELECT lp.ID, lp.TEMPO_LOCACAO, lp.STATUS, l.DATA_HORA, m.NOME AS MODELO_PRANCHA
+    FROM LOCACAO_PRANCHA lp
+    INNER JOIN LOCACAO l ON lp.FK_LOCACAO_ID = l.ID
+    INNER JOIN PRANCHA p ON lp.FK_PRANCHA_ID = p.ID
+    INNER JOIN MODELO_PRANCHA m ON p.FK_MODELO_PRANCHA_ID = m.ID
+    WHERE lp.STATUS = 'Alugada';
+    
+  Consulta: 
+  
+    SELECT *
+    FROM vw_locacoes_ativas;
+    
+**VIEW 3: Nesta VIEW, é realizada uma junção INNER JOIN entre as tabelas LOGIN_CLIENTE e CARTAO, relacionando os registros através do ID do cliente através da coluna FK_LOGIN_CLIENTE_ID. O comando WHERE filtra os registros com data de validade até 2024.**
+
+    CREATE VIEW vw_cartoes_validos AS
+    SELECT lc.NOME, c.BANDEIRA, c.DT_VALIDADE
+    FROM LOGIN_CLIENTE lc
+    INNER JOIN CARTAO c ON lc.ID = c.FK_LOGIN_CLIENTE_ID
+    WHERE c.DT_VALIDADE <= '2024-12-31';
+    
+  Consulta:
+  
+    SELECT *
+    FROM vw_cartoesValidadeAcabando;
+    
+**VIEW 4: **
+
+
+  
+  
 
 
         a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
