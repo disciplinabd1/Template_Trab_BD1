@@ -436,8 +436,18 @@ https://colab.research.google.com/drive/1KcrMp_ruP2bqOZ3ssEwCbaCR5fvNI2QI#scroll
     SELECT *
     FROM vw_cartoesValidadeAcabando;
     
-**VIEW 4: **
+**VIEW 4: Nesta VIEW, usamos a junção LEFT JOIN entre as tabelas LOGIN_CLIENTE e LOCACAO, relacionando os registros através da coluna FK_CARTAO_ID. O comando GROUP BY agrupa os registros pelo nome da pessoa. A função COUNT() é utilizada para contar o número de locações realizadas por cada pessoa.**
 
+    CREATE VIEW vw_totalLocacoes AS
+    SELECT lc.NOME, COUNT(l.ID) AS TOTAL_LOCACOES
+    FROM LOGIN_CLIENTE lc
+    LEFT JOIN LOCACAO l ON lc.ID = l.FK_CARTAO_ID
+    GROUP BY lc.NOME;
+    
+  Consulta:
+  
+    SELECT *
+    FROM vw_TotalLocacoes;
 
   
   
