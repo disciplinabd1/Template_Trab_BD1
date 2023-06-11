@@ -448,6 +448,25 @@ https://colab.research.google.com/drive/1KcrMp_ruP2bqOZ3ssEwCbaCR5fvNI2QI#scroll
   
     SELECT *
     FROM vw_TotalLocacoes;
+    
+**VIEW 5: Realizamos junções INNER JOIN entre as tabelas LOGIN_CLIENTE, CARTAO, LOCACAO e LOCACAO_PRANCHA para obter as informações dos clientes, cartões, locações e locações de prancha. A cláusula WHERE é usada para filtrar apenas os registros com tempo de locação igual ou menor que 4.**
+
+    CREATE VIEW vw_clientes_tempo_locacao AS
+    SELECT lc.NOME, lc.TELEFONE, lc.EMAIL
+    FROM LOGIN_CLIENTE lc
+    INNER JOIN CARTAO c ON lc.ID = c.FK_LOGIN_CLIENTE_ID
+    INNER JOIN LOCACAO l ON c.ID = l.FK_CARTAO_ID
+    INNER JOIN LOCACAO_PRANCHA lp ON l.ID = lp.FK_LOCACAO_ID
+    WHERE lp.TEMPO_LOCACAO <= 4;
+  
+  Consulta: 
+ 
+    SELECT *
+    FROM vw_clientes_tempo_locacao;
+  
+**VIEW 6: .**
+
+
 
   
   
