@@ -302,12 +302,24 @@ https://colab.research.google.com/drive/1KcrMp_ruP2bqOZ3ssEwCbaCR5fvNI2QI#scroll
     SELECT *
     FROM LOCACAO_PRANCHA
     WHERE TEMPO_LOCACAO * 2 > 8 AND STATUS = 'Alugada';
-
     
+ **Consulta 9: Renomeia o ID como Identificador e o PRECO como PrecoUnitario.**
+ 
+    SELECT ID AS Identificador, PRECO AS PrecoUnitario
+    FROM PRANCHA;
     
-    a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
-    b) Criar no mínimo 3 consultas com operadores aritméticos 
-    c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
+ **Consulta 10: Selecionamos ID e PRECO da tabela PRANCHA e renomeamos a tabela MODELO_PRANCHA para 'M' e depois renomeamos a coluna NOME para 'nomeModelo'**
+ 
+    SELECT P.ID, P.PRECO, M.NOME AS NomeModelo
+    FROM PRANCHA P
+    JOIN MODELO_PRANCHA M ON P.FK_MODELO_PRANCHA_ID = M.ID;
+    
+ **Consulta 11: Selecionamos o campo TEMPO_LOCACAO da tabela LOCACAO_PRANCHA e o campo PRECO da tabela PRANCHA depois renomeamos a tabela LOCACAO_PRANCHA para "LP" e o campo TEMPO_LOCACAO para "Tempo". Renomeamos também a tabela PRANCHA para "P" e o campo PRECO para "Valor" na seleção.**
+ 
+    SELECT LP.TEMPO_LOCACAO AS Tempo, P.PRECO AS Valor
+    FROM LOCACAO_PRANCHA LP
+    JOIN PRANCHA P ON LP.FK_PRANCHA_ID = P.ID;
+    
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
     a) Criar outras 5 consultas que envolvam like ou ilike
