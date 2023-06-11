@@ -408,7 +408,7 @@ https://colab.research.google.com/drive/1KcrMp_ruP2bqOZ3ssEwCbaCR5fvNI2QI#scroll
     SELECT *
     FROM vw_pranchasDisponiveis;
     
- **VIEW 2: **
+ **VIEW 2: Retorna as locações ativas de pranchas, incluindo o ID, tempo de locação, status, data e hora da locação, e nome do modelo da prancha. Ela é construída através de junções INNER JOIN entre as tabelas LOCACAO_PRANCHA, LOCACAO, PRANCHA e MODELO_PRANCHA, onde são relacionados os IDs correspondentes. Além disso, é aplicado um filtro para mostrar apenas as locações com status 'Alugada'.**
  
     CREATE VIEW vw_locacoes_ativas AS
     SELECT lp.ID, lp.TEMPO_LOCACAO, lp.STATUS, l.DATA_HORA, m.NOME AS MODELO_PRANCHA
@@ -418,7 +418,7 @@ https://colab.research.google.com/drive/1KcrMp_ruP2bqOZ3ssEwCbaCR5fvNI2QI#scroll
     INNER JOIN MODELO_PRANCHA m ON p.FK_MODELO_PRANCHA_ID = m.ID
     WHERE lp.STATUS = 'Alugada';
     
-  Consulta: 
+  Consulta:
   
     SELECT *
     FROM vw_locacoes_ativas;
@@ -464,16 +464,18 @@ https://colab.research.google.com/drive/1KcrMp_ruP2bqOZ3ssEwCbaCR5fvNI2QI#scroll
     SELECT *
     FROM vw_clientes_tempo_locacao;
   
-**VIEW 6: .**
+**VIEW 6: Realizamos um INNER JOIN entre as tabelas MODELO_PRANCHA e PRANCHA para obter as informações do nome do modelo da prancha e o preço correspondente. .**
 
-
-
+    CREATE VIEW vw_pranchaPreco AS
+    SELECT mp.NOME AS MODELO_PRANCHA, p.PRECO
+    FROM MODELO_PRANCHA mp
+    INNER JOIN PRANCHA p ON mp.ID = p.FK_MODELO_PRANCHA_ID;
+    
+  Consulta:
   
-  
-
-
-        a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
-        b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
+    SELECT *
+    FROM vw_pranchaPreco;
+    
 
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
      a) Criar minimo 1 envolvendo GROUP BY
