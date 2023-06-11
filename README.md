@@ -393,6 +393,24 @@ https://colab.research.google.com/drive/1KcrMp_ruP2bqOZ3ssEwCbaCR5fvNI2QI#scroll
     a) Criar minimo 1 de cada tipo
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
+
+**VIEW 1: Essa VIEW seleciona as colunas ID, NOME, DESCRICAO, COMPRIMENTO e STATUS, mostrando os modelos das pranchas e se estão disponíveis para locação. Utiliza-se um LEFT JOIN entre a tabela MODELO_PRANCHA e as tabelas PRANCHA e LOCACAO_PRANCHA para verificar se existe uma prancha associada ao modelo e se essa prancha não está alugada.**
+
+    CREATE VIEW vw_pranchasDisponiveis AS
+    SELECT mp.ID, mp.NOME, mp.DESCRICAO, mp.COMPRIMENTO, lp.STATUS
+    FROM MODELO_PRANCHA mp
+    LEFT JOIN PRANCHA p ON mp.ID = p.FK_MODELO_PRANCHA_ID
+    LEFT JOIN LOCACAO_PRANCHA lp ON p.ID = lp.FK_PRANCHA_ID
+    WHERE (lp.STATUS IS NULL OR lp.STATUS <> 'Alugada');
+    
+  Consulta:
+    
+    SELECT *
+    FROM vw_pranchasDisponiveis;
+    
+ **VIEW 2: **
+
+
         a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
 
