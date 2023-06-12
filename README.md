@@ -428,7 +428,7 @@ https://colab.research.google.com/drive/1KcrMp_ruP2bqOZ3ssEwCbaCR5fvNI2QI#scroll
     
 **VIEW 3: Nesta VIEW, é realizada uma junção INNER JOIN entre as tabelas LOGIN_CLIENTE e CARTAO, relacionando os registros através do ID do cliente através da coluna FK_LOGIN_CLIENTE_ID. O comando WHERE filtra os registros com data de validade até 2024.**
 
-    CREATE VIEW vw_cartoes_validos AS
+    CREATE VIEW vw_cartoesValidadeAcabando AS
     SELECT lc.NOME, c.BANDEIRA, c.DT_VALIDADE
     FROM LOGIN_CLIENTE lc
     INNER JOIN CARTAO c ON lc.ID = c.FK_LOGIN_CLIENTE_ID
