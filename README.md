@@ -358,9 +358,9 @@ https://colab.research.google.com/drive/1KcrMp_ruP2bqOZ3ssEwCbaCR5fvNI2QI#scroll
      INNER JOIN LOCACAO l ON c.ID = l.FK_CARTAO_ID
      ORDER BY l.DATA_HORA ASC;
           
-**Consulta 4: Retorna o nome do cliente, número do cartão, descrição da prancha e a data de locação para as locações que foram realizadas após uma determinada data, ordenadas pela data de locação em ordem decrescente.**
+**Consulta 4: Retorna o nome do cliente, número do cartão, nome da prancha e a data de locação para as locações que foram realizadas após uma determinada data, ordenadas pela data de locação em ordem decrescente.**
 
-     SELECT lc.NOME, c.NUMERO, mp.DESCRICAO, l.DATA_HORA
+     SELECT lc.NOME, c.NUMERO, mp.NOME, l.DATA_HORA
      FROM LOGIN_CLIENTE lc
      INNER JOIN CARTAO c ON lc.ID = c.FK_LOGIN_CLIENTE_ID
      INNER JOIN LOCACAO l ON c.ID = l.FK_CARTAO_ID
@@ -370,7 +370,7 @@ https://colab.research.google.com/drive/1KcrMp_ruP2bqOZ3ssEwCbaCR5fvNI2QI#scroll
      WHERE l.DATA_HORA > '2023-06-01'
      ORDER BY l.DATA_HORA DESC;
      
-**Consulta 5: Retorna todas as informações de locações ativas, incluindo o nome do cliente, número do cartão, descrição da prancha, data de locação e tempo de locação.**
+**Consulta 5: Retorna todas as informações de locações ativas, incluindo o nome do cliente, número do cartão, nome da prancha, data de locação e tempo de locação.**
 
      SELECT lc.NOME AS nome_cliente, c.NUMERO AS numero_cartao, mp.NOME AS nome_prancha, l.DATA_HORA, lp.TEMPO_LOCACAO
      FROM LOGIN_CLIENTE lc
