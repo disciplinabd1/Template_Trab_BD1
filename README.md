@@ -255,6 +255,9 @@ Descrição do mini-mundo!
 https://colab.research.google.com/drive/1KcrMp_ruP2bqOZ3ssEwCbaCR5fvNI2QI#scrollTo=fKv8IJkLpVQG
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
+
+https://colab.research.google.com/drive/1KcrMp_ruP2bqOZ3ssEwCbaCR5fvNI2QI#scrollTo=gMAg-NgZroW-
+
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
 
 **Consuta 1: Retorna dados dos cartões da bandeira Mastercard com vencimento depois de 2024.**
