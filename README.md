@@ -496,10 +496,7 @@ https://colab.research.google.com/drive/1KcrMp_ruP2bqOZ3ssEwCbaCR5fvNI2QI#scroll
        INNER JOIN LOCACAO_PRANCHA lp ON l.ID = lp.FK_LOCACAO_ID
        WHERE lp.STATUS = 'Alugada');
        
-**Subconsulta 2: Retorna a média de tempo de locação das pranchas.**
-
-       SELECT AVG(lp.TEMPO_LOCACAO) AS media_locacao
-       FROM LOCACAO_PRANCHA lp;
+**Subconsulta 2: Retorna Subconsulta para obter o número de pranchas disponíveis para locação.**
        
 **Subconsulta 3: Retorna o número de locações ativas por cliente.**
 
