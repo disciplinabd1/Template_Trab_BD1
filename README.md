@@ -485,38 +485,12 @@ https://colab.research.google.com/drive/1KcrMp_ruP2bqOZ3ssEwCbaCR5fvNI2QI#scroll
      b) Criar minimo 1 envolvendo algum tipo de junção
      
 **Subconsulta 1: Retorna o nome dos clientes que possuem uma locação ativa.**
-
-     SELECT NOME
-     FROM LOGIN_CLIENTE
-     WHERE ID IN (
-       SELECT DISTINCT lc.ID
-       FROM LOGIN_CLIENTE lc
-       INNER JOIN CARTAO c ON lc.ID = c.FK_LOGIN_CLIENTE_ID
-       INNER JOIN LOCACAO l ON c.ID = l.FK_CARTAO_ID
-       INNER JOIN LOCACAO_PRANCHA lp ON l.ID = lp.FK_LOCACAO_ID
-       WHERE lp.STATUS = 'Alugada');
        
 **Subconsulta 2: Retorna Subconsulta para obter o número de pranchas disponíveis para locação.**
        
 **Subconsulta 3: Retorna o número de locações ativas por cliente.**
 
-       SELECT lc.NOME, COUNT(*) AS NUMERO_LOCACOES
-       FROM LOGIN_CLIENTE lc
-       INNER JOIN CARTAO c ON lc.ID = c.FK_LOGIN_CLIENTE_ID
-       INNER JOIN LOCACAO l ON c.ID = l.FK_CARTAO_ID
-       INNER JOIN LOCACAO_PRANCHA lp ON l.ID = lp.FK_LOCACAO_ID
-       WHERE lp.STATUS = 'Alugada'
-       GROUP BY lc.NOME;
-       
 **Subconsulta 4: Retorna o nome dos clientes que alugaram pranchas e a média de tempo de locação por cliente.**
-
-       SELECT lc.NOME, AVG(lp.TEMPO_LOCACAO) AS media_tempo_locacao
-       FROM LOGIN_CLIENTE lc
-       INNER JOIN CARTAO c ON lc.ID = c.FK_LOGIN_CLIENTE_ID
-       INNER JOIN LOCACAO l ON c.ID = l.FK_CARTAO_ID
-       INNER JOIN LOCACAO_PRANCHA lp ON l.ID = lp.FK_LOCACAO_ID
-       WHERE lp.STATUS = 'Alugada'
-       GROUP BY lc.NOME;
 
 
 
