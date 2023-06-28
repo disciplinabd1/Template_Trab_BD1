@@ -36,7 +36,7 @@ Descrição do mini-mundo!
  
 > A Empresa Surfistinha precisa inicialmente dos seguintes relatórios:
 
-    * Relatório obtendo o modelo de cada prancha e a quantidade de locações de cada modelo.
+    * Relatório obtendo a quantidade de locações por dia da semana, informando quais dias da semana tem mais locações.
     * Relatório relacionando cliente, modelo de prancha, mostrando qual o modelo mais alugado por cada cliente. O relatório deve conter o nome do cliente, o nome do modelo de prancha mais alugado por ele e o total de vezes que ele alugou o modelo.
     * Relatório relacionando cliente e número de locações, o relatório deve conter nome do cliente, telefone e email, além do número de locações feito pelo cliente.
     * Relatório mostrando os dados referentes a cada prancha, descrição, comprimento, nome e quantidade de pranchas do referente modelo, além do número de locações de cada modelo.
